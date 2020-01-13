@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Abdul Ebens cheat sheet</title>
+    <link rel="stylesheet" type="text/css" href="css/cheat-sheat.css">
+  </head>
+<body>
+  <div class="header">
+    <h1>Cheat sheet</h1>
+    <p>This is my Cheat sheet reference</p>
+  </div>
+  <ul>
+    <li><a href="#html-tags">HTML Tags Description</a></li>
+    <li><a href="#table-attributes">HTML Table Attributes</a></li>
+    <li><a href="#css-selector">CSS Selector Description</a></li>
+    <li><a href="#css-sytax">CSS Syntax Description</a></li>
+    <li><a href="#footer">About the develover</a></li>
+  </ul>
+
+  <!-- HTML tags -->
+  
+  <div id="html-tags">
+    <h3 class="description">Basic HTML tags</h3>
+    <table>
+      <thead class="thead">
+        <tr>
+          <th>HTML tags</th>
+          <th>name</th>
+          <th>description</th>
+        </tr>
+      </thead>
+      
+      <tbody class="tbody">
+        <tr>
+          <td class="first-td">&lt;h1&gt;</td>
+          <td>Heading</td>
+          <td>This is used for text heading, h1 is the bigest and h6 is the smallest</td>
+        </tr>
+        <tr>
+          <td class="first-td">&lt;p&gt;</td>
+          <td>Paragraph</td>
+          <td>This is used for creating paragraph on the page<br> An example of paragraph is &lt;p&gt;This is a paragraph&lt;/p&gt;</td>
+        </tr>
+        <tr>
+          <td class="first-td">&lt;b&gt;</td>
+          <td>Bold</td>
+          <td>Make text between tags bold</td>
+        </tr>
+         <tr>
+          <td class="first-td">&lt;i&gt;</td>
+          <td>Italics</td>
+          <td>Make text between tags italics</td>
+        </tr>
+        <tr>
+          <td class="first-td">&lt;div&gt;</td>
+          <td>Division</td>
+          <td>Divide up page content into sections, and applying styles</td>
+        </tr>
+        <tr>
+          <td class="first-td">&lt;table&gt;</td>
+          <td>Table</td>
+          <td>In some points, you need to display some data in a tabular form in your website, the solution is to use &lt;table&gt; tag. Example of table is <br>&lt;table&gt; opening and closing tag &lt;/table&gt;</td>
+        </tr>
+        <tr>
+          <td class="first-td">&lt;tr&gt;</td>
+          <td>Table Row</td>
+          <td>The table row container</td>
+        </tr>
+        <tr>
+          <td class="first-td">&lt;th&gt;</td>
+          <td>Table Header</td>
+          <td>The set of rows defining the column headers in a table</td>
+        </tr>
+        <tr>
+          <td class="first-td">&lt;td&gt; &lt;/td&gt;</td>
+          <td>Table Data</td>
+          <td>Table Cell within table row </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+           <td class="first-td">
+             &lt;html&gt;<br>
+             &lt;body&gt;<br>
+             <span style="color: gray;">&lt;!--content--&gt;</span>
+             &lt;/body&gt;<br>
+             &lt;/html&gt;
+          </td>
+          <td>HTML structure</td>
+          <td>All the basic HTML tags must be within the body tags</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+    <!-- Table attributes -->
+
+  <br><br>
+  
+  <div id="table-attributes">
+    <h3 class="description">Table Attributes</h3>
+    <div class="scroll">
+      <table class="scroll-table">
+        <tr>
+          <th>Attributes</th>
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
+
+        <tr>
+          <td class="first-td">colspan=" "</td>
+          <td>Column Span</td>
+          <td>Defines how many columns a table data (td) should span.</td>
+        </tr>
+        <tr>
+          <td class="first-td">rowspan=" "</td>
+          <td>Row Span</td>
+          <td>Defines how many rows a td element should span.</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <br><br>
+
+  <!-- CSS selector -->
+
+  <div id="css-selector">
+    <h3 class="description">CSS Selector and its properties and values </h3>
+    <div class="scroll">
+      <table class="scroll-table">
+        <tr>
+          <th>selector</th>
+          <th>property</th>
+          <th>value</th>
+          <th>description</th>
+        </tr>
+        <tr>
+          <td class="first-td">body</td>
+          <td>text-align: </td>
+          <td>center;</td>
+          <td>To centralize all the text in the document</td>
+        </tr>
+        <tr>
+          <td class="first-td">div</td>
+          <td>background-color:</td>
+          <td>blue;</td>
+          <td>To set the background color of the &lt;div&gt; container to blue.</td>
+        </tr>
+        <tr>
+          <td class="first-td">p</td>
+          <td>color:</td>
+          <td>green;</td>
+          <td>To set the text color of the paragraph to green</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <br>
+
+  <!-- CSS description -->
+
+  <div id="css-sytax">  
+    <h3 class="description">CSS syntax Description</h3>
+    <table>
+      <tr>
+        <th colspan="2" class="css-notice">Remember to enclose each selector in a Curly braces.</th>
+      </tr>
+      <tr>
+        <th>syntax</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td class="first-td">p {<br>
+          &nbsp;&nbsp; font-size: 20px;<br>
+          }</td>
+        <td>This icrease the font size of the paragraph to 20 pixels</td>
+      </tr>
+      <tr>
+        <td class="first-td">.css-notice {<br>
+          <span style="margin-left: 35px;">color: red;</span><br>
+          }</td>
+        <td>This change the color of an HTML tag with the <b>class name</b> .css-notice</td>
+      </tr>
+    </table>
+  </div>
+  <br>
+
+  <!-- the footer -->
+
+  <div id="footer">
+    <div class="about-me">
+      <img src="img/abdul.jpg" width="200" height="200" alt="My picture">
+      <p>Designed by <i>&dash;Abdul Ebens</i></p>
+    </div>
+    <div class="date">
+      <p style="font-size: 15px;">&copy;Copyrights @ loaded-villa 2020</p>
+    </div>
+  </div>
+</body>
+</html>

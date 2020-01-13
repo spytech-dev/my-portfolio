@@ -1,0 +1,213 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	width: 100%;
+	text-align: center;
+	font-size: 100%;
+	font-family: Helvetica, Arial;
+	background-color: beige;
+}
+a {
+	text-decoration: none;
+}
+.myTable {
+	overflow-x: auto;
+}
+.container {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+header {
+	top: 0px;
+	color: white;
+	padding: 25px;
+	animation-name: shake;
+	animation-duration: 0.2s;
+	animation-delay: 0;
+	position: sticky;
+	margin-top: 2px;
+	background-color: #7575a3;
+}
+@keyframes shake {
+	0% {
+		padding: 27px;
+	}
+	100% {
+		padding: 25px;
+	}
+}
+
+nav {
+	margin: 10px auto;
+	display: flex;
+	width: 80%;
+}
+nav div {
+	width: 20%;
+	margin: 0.5%;
+	padding: 4px;
+	border: 1px solid rgba(0,0,0, 0.6);
+}
+nav div a {
+	font-weight: bold;
+
+}
+nav div a:visited {
+	color: #cb9cee;
+}
+nav div a:link {
+	color: #7575a3;
+}
+.pro-img {
+	text-align: center;
+}
+.pro-img img {
+	margin: 10px 0;
+	border: 6px double #7575a3;
+	border-radius: 50%;
+	outline: none;
+}
+main div .fa {
+	font-size: 100%;
+	margin: 5px 5px 0px 0px;
+}
+main div .fa-map-marker {
+	margin: 5px 5px;
+}
+main div .about {
+	text-align: justify;
+}
+section main {
+	background-color: white;
+	border: 2px solid white;
+	margin: 15px auto;
+	padding: 10px;
+	width: 90%;
+	text-align: left;
+	border-radius: 10px;
+	box-shadow: 0 0 20px gray;
+}
+.seccess {
+	text-align: center;
+	padding: 20px;
+	color: maroon;
+}
+.top-article {
+	padding: 20px;
+	margin: 15px auto;
+	background-color: #fff;
+	text-align: justify;
+}
+.top-article ul {
+	border-left: 6px double #7575a3;
+}
+.notice {
+	text-align: center;
+	color: #660066;
+	font-family: sans-serif;
+}
+.top-article ul li {
+	list-style: none;
+	color: rgba(0,0,0, 0.8);
+	margin: 20px 20px;
+}
+.top-article h3 {
+	font-family: Tahoma;
+	color: skyblue;
+}
+#skills {
+	margin-bottom: 100px;
+
+}
+.skills {
+	font-size: 2.5em;
+	color: #660066;
+	font-family: "wide latin", Impact;
+	letter-spacing: 5px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.bottom-article {
+	display: flex;
+	width: 85%;
+	margin: auto;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.bottom-article div {
+	width: 25%;
+	margin: 1%;
+	background-color: rgba(0,0,0, 0.2);
+	border-radius: 10px;
+	border: 10px double #fff;
+}
+.bottom-article div img {
+	width: 50%;
+}
+.hr-rule {
+	height: 5px;
+	width: 95%;
+	margin: 10px auto;
+	border: 0;
+	background-color: #660066;
+}
+footer .talk {
+	background-color: #fff;
+	padding: 25px;
+}
+footer .talk span {
+	color: green;
+	font-weight: bolder;
+}
+footer .talk a {
+}
+footer .profile {
+	color: #fff;
+	padding: 15px;
+	background-color: #7575a3;
+}
+
+/*Number of visits, animation*/
+aside {
+	height: 20px;
+}
+#result {
+    animation-name: count;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-delay: 3s; 
+    animation-duration: 5s;
+  }
+  @keyframes count {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+/*media queries*/
+
+@media screen and (max-width: 760px){
+	nav {
+		width: 100%;
+	}
+	nav div {
+		width: 24%;
+		margin: 0.5%;
+		border: none;
+	}
+	.bottom-article {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.bottom-article div {
+		width: 45%;
+		margin: 1%;
+	}
+}

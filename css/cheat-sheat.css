@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+  width: 100%;
+  font-size: 100%;
+  font-family: sans-serif, Tahoma;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/learn-css-selectors-visual-rules/hypnotize_bg.png");
+}
+.header {
+  padding: 2em;
+  background-color: beige;
+}
+h1, h3, p {
+  font-family: monospace;
+}
+p {
+  font-size: 1.5em;
+}
+ul {
+  text-align: left;
+   padding: 20px;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  margin-bottom: 5px;
+}
+table {
+  font-size: 1.5em;
+  background-color: beige;
+  margin: 0 auto;
+  width: 85%;
+}
+.scroll {
+  margin: 0 10px;
+  overflow-x: auto;
+}
+td {
+  padding: 7px;
+}
+.first-td {
+  color: maroon; 
+}
+div .description {
+  color: maroon;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+table, th, td {
+  text-align: left;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+table th {
+  text-transform: uppercase;
+  background-color: skyblue;
+  letter-spacing: 3px;
+  padding: 10px;
+}
+table td {
+  font-family: Tahoma;
+}
+.css-notice {
+  text-transform: unset;
+  text-align: center;
+  background-color: white;
+}
+#css-sytax {
+  margin-top: 50px;
+}
+#footer .about-me img {
+  border-radius: 50%;
+}
+#footer .date {
+  padding: 2em;
+  background-color: beige;
+}
+
+/*media querry for typography*/
+
+@media screen and (max-width: 760px){
+  table {
+    font-size: 1em;
+  }
+}
